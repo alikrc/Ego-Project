@@ -1,0 +1,30 @@
+﻿@model CoreProject.EgoApiModelSingleItem
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container-fluid ">
+
+    <div class="row">
+        <div class="col-xs-1"><strong>Hat No</strong></div>
+        <div class="col-xs-4"><strong>Adı</strong></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1">@Model.kodu</div>
+        <div class="col-xs-4">@Model.adi</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-5 small">Suresi: @Model.suresi dk, Mesafesi:@Model.mesafesi km</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-5 small">@Model.detay</div>
+    </div>
+</div>
+
+
+@*<h3>@Model.yon</h3>
+<h3>@Model.px</h3>
+<h3>@Model.py</h3>
+<h3>@Model.opx</h3>
+<h3>@Model.opy</h3>*@
